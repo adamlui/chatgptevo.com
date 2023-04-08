@@ -11729,14 +11729,14 @@ html {
   /* CSS rules for the layout at 1200px and below */
 }
 
-.btn {
+.ff-btn {
   background-color: white ;
   color: black ;
 }
 
-.btn:hover {
-  color: white;
-  background-color: black;
+.chrome-btn {
+  background-color: black ;
+  color: white ;
   border-color: white;
 }
 
@@ -11745,3 +11745,5 @@ html {
   bottom: 2px;
   position: relative;
 }
+
+.btn { transition: 0.05s }
