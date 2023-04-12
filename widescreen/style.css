@@ -11732,15 +11732,15 @@ html {
   /* CSS rules for the layout at 1200px and below */
 }
 
-.ff-btn {
-  background-color: white ;
-  color: black ;
-}
-
 .chrome-btn {
   background-color: black ;
   color: white ;
   border-color: white;
+}
+
+.gm-btn {
+  background-color: white ;
+  color: black ;
 }
 
 .browser-icon {
@@ -11749,4 +11749,8 @@ html {
   position: relative;
 }
 
-.btn { transition: 0.05s }
+.btn {
+  transition: 0.05s;
+  font-size: 1.3rem !important;
+  padding: 12px 33px !important;
+}
