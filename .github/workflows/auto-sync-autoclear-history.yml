@@ -1,0 +1,39 @@
+name: Sync autoclear-history/ to autoclear/ && auto-clear/ && auto-clear-history/
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'autoclear-history/**'
+
+jobs:
+  build:
+    if: github.event.commits[0].committer.username != 'auto-sync-bot'
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout adamlui/chatgptevo.com
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/chatgptevo.com
+          path: adamlui/chatgptevo.com
+
+      - name: Sync autoclear-history/ to autoclear/
+        run: rsync -avh --delete ${{ github.workspace }}/adamlui/chatgptevo.com/autoclear-history/ ${{ github.workspace }}/adamlui/chatgptevo.com/autoclear/
+
+      - name: Sync autoclear-history/ to auto-clear/
+        run: rsync -avh --delete ${{ github.workspace }}/adamlui/chatgptevo.com/autoclear-history/ ${{ github.workspace }}/adamlui/chatgptevo.com/auto-clear/
+
+      - name: Sync autoclear-history/ to auto-clear-history/
+        run: rsync -avh --delete ${{ github.workspace }}/adamlui/chatgptevo.com/autoclear-history/ ${{ github.workspace }}/adamlui/chatgptevo.com/auto-clear-history/
+
+      - name: Push to adamlui/chatgptevo.com
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: '--force'
+          add_options: '--all'
+          commit_user_email: auto-sync@chatgptevo.com
+          commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `chatgptevo.com/autoclear-history`]'
+          file_pattern: '*'
+          repository: adamlui/chatgptevo.com
