@@ -25,7 +25,7 @@ jobs:
       - name: Sync auto-clear-history/ to auto-clear/
         run: rsync -avh --delete ${{ github.workspace }}/adamlui/chatgptevo.com/auto-clear-history/ ${{ github.workspace }}/adamlui/chatgptevo.com/auto-clear/
 
-      - name: Sync auto-clear-history/ to auto-clear-history/
+      - name: Sync auto-clear-history/ to auto-clearhistory/
         run: rsync -avh --delete ${{ github.workspace }}/adamlui/chatgptevo.com/auto-clear-history/ ${{ github.workspace }}/adamlui/chatgptevo.com/autoclear-history/
 
       - name: Push to adamlui/chatgptevo.com
