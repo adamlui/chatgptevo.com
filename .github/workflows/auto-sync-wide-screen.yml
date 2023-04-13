@@ -1,0 +1,39 @@
+name: Sync wide-screen/ to widescreen/ && widescreen-mode/ && wide-screen-mode/
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'wide-screen/**'
+
+jobs:
+  build:
+    if: github.event.commits[0].committer.username != 'auto-sync-bot'
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout adamlui/chatgptevo.com
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/chatgptevo.com
+          path: adamlui/chatgptevo.com
+
+      - name: Sync wide-screen/ to widescreen/
+        run: rsync -avh --delete ${{ github.workspace }}/adamlui/chatgptevo.com/wide-screen/ ${{ github.workspace }}/adamlui/chatgptevo.com/widescreen/
+
+      - name: Sync wide-screen/ to widescreen-mode/
+        run: rsync -avh --delete ${{ github.workspace }}/adamlui/chatgptevo.com/wide-screen/ ${{ github.workspace }}/adamlui/chatgptevo.com/widescreen-mode/
+
+      - name: Sync wide-screen/ to wide-screen-mode/
+        run: rsync -avh --delete ${{ github.workspace }}/adamlui/chatgptevo.com/wide-screen/ ${{ github.workspace }}/adamlui/chatgptevo.com/wide-screen-mode/
+
+      - name: Push to adamlui/chatgptevo.com
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: '--force'
+          add_options: '--all'
+          commit_user_email: auto-sync@chatgptevo.com
+          commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `chatgptevo.com/wide-screen`]'
+          file_pattern: '*'
+          repository: adamlui/chatgptevo.com
