@@ -75,3 +75,7 @@ h1 {
     bottom: 2px ;
     position: relative ;
 }
+
+.featured-logos { padding: 13px }
+.featured-logos a { text-decoration: none ; transition: all ease 0.05s }
+.featured-logos a:hover { opacity:.75 }
