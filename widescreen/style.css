@@ -11,6 +11,8 @@
 body {
     background-image: url(background.png);
     background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
 }
 
 .github-corner {
