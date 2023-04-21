@@ -17,6 +17,12 @@
         <link href="../widescreen/style.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
+        <script>
+            document.querySelector('body').onscroll = function() {
+                var yValue = document.scrollingElement.scrollTop * 0.9
+                document.querySelector('main').style.backgroundPosition = 'center ' + yValue + 'px'
+            }
+        </script>
         <a title="View on GitHub" href="https://chatgptevo.com/widescreen/github" target="_blank" class="github-corner" aria-label="View on GitHub">
             <svg viewBox="0 0 250 250" aria-hidden="true">
                 <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" fill="#FFF"></path>
@@ -29,9 +35,9 @@
             <header class="py-5">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
+
                         <div class="col-l-5" >
-                            <div class="text-center text-l-start">
-                                
+                            <div class="text-center text-l-start">                                
                                 <div style="color: white ; font-size: 1.85rem !important" class="fs-4 fw-light ">Add <strong>Wide Screen</strong> + <strong>Full-Window</strong> modes to <strong>ChatGPT</strong></div>
                                 <img class="hero-logo" src="https://raw.githubusercontent.com/adamlui/chatgpt-widescreen/main/media/images/logos/chatgpt-widescreen-logo-dark-mode-1184x275.png">
                                 <div class="btn-toolbar gap-3 d-sm-flex justify-content-sm-center justify-content-l-start mb-3">
@@ -49,6 +55,7 @@
 
                             </div>
                         </div>
+
                     </div>
                 </div>
             </header>
@@ -64,7 +71,7 @@
                     </a>
                 </div>
             </div>
-
+            
         </main>
     </body>
 </html>

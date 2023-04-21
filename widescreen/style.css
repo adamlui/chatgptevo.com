@@ -8,11 +8,11 @@
          url('../fonts/baba-pro-bold/baba-pro-bold.woff2') format('woff2');
 }
 
-body {
+main {
     background-image: url(background.png);
     background-size: cover;
     background-position: bottom center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 /* FF scrollbar */
