@@ -15,6 +15,8 @@ main {
     background-attachment: scroll;
 }
 
+iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.js */
+
 /* FF scrollbar */
 :root { scrollbar-width: thin ; scrollbar-color: rgb(210,210,210) #1a1a1a }
 
