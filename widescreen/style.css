@@ -17,13 +17,11 @@ main {
 
 iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.js */
 
-/* FF scrollbar */
-:root { scrollbar-width: thin ; scrollbar-color: rgb(210,210,210) #1a1a1a }
-
-/* Chrome/Safari scrollbar */
-::-webkit-scrollbar {  width: 8px ; background-color: #1a1a1a }
-::-webkit-scrollbar-thumb { background-color: rgb(210,210,210) }
-::-webkit-scrollbar-thumb:hover { background-color: #999 }
+/* Scrollbar */
+* { scrollbar-color: rgb(210,210,210) #1a1a1a ; scrollbar-width: thin } /* Firefox */
+::-webkit-scrollbar { width: 10px ; height: 10px } /* Chromium/Safari */
+::-webkit-scrollbar-thumb { background: white ; border-radius: 4px ; border: 1px black solid }
+::-webkit-scrollbar-track { background: #1a1a1a }
 
 body, iframe { cursor: url('../media/images/cursors/futuristic/pointer.cur'), auto }
 button:hover, a:hover { cursor: url('../media/images/cursors/futuristic/target.gif'), auto }
