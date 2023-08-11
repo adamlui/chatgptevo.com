@@ -1,6 +1,6 @@
 /* Add smooth scroll */
 
-smoothScroll(document, 155, 12);
+smoothScroll(document, 155, 9);
 
 function smoothScroll(target, speed, smooth) {
 
