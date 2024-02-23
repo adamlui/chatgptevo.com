@@ -12,5 +12,6 @@ module.exports = {
         'no-useless-escape': 'off' // allow all escape chars cause ESLint sucks at detecting truly useless ones
     },
     'parserOptions': { 'ecmaVersion': 2022, 'sourceType': 'script' },
+    'overrides': [{ 'files': ['**/*.json'], 'extends': ['plugin:json-schema-validator/recommended'] }],
     'env': { 'browser': true, 'node': true, 'es6': true }
 };
