@@ -12,6 +12,6 @@
     "lint:all": "eslint . --ext js,json,yml",
     "lint:fix": "eslint . --ext js,json,yml --fix --cache",
     "lint:fix-all": "eslint . --ext js,json,yml --fix",
-    "prepare": "husky"
+    "build:js": "minify-js ."
   }
 }
