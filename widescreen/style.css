@@ -46,7 +46,7 @@ h1 {
 
 .install-btn {
     color: black ;
-    font-family: baba-pro-bold ;
+    font-family: baba-pro-bold, sans-serif ;
     transition: 0.2s ease all ;
     font-size: 1.3rem !important ;
     padding: 12px 33px !important ;
