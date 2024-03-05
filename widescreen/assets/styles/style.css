@@ -9,7 +9,7 @@
 }
 
 main {
-    background-image: url(assets/images/background.png);
+    background-image: url('../images/background.png');
     background-size: cover;
     background-position: bottom center;
     background-attachment: scroll;
@@ -24,8 +24,8 @@ iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.j
 ::-webkit-scrollbar-track { background: #1a1a1a }
 ::-webkit-scrollbar-thumb:hover { background: rgb(210,210,210) }
 
-body, iframe { cursor: url('../media/images/cursors/futuristic/pointer.cur'), auto }
-button:hover, a:hover { cursor: url('../media/images/cursors/futuristic/target.gif'), auto }
+body, iframe { cursor: url('../../../media/images/cursors/futuristic/pointer.cur'), auto }
+button:hover, a:hover { cursor: url('../../../media/images/cursors/futuristic/target.gif'), auto }
 
 .github-corner {
     position: fixed ;
