@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@adamlui/minify.js": "^1.2.0",
+    "@adamlui/minify.js": "^1.2.1",
     "eslint": "^8.57.0",
     "eslint-plugin-json-schema-validator": "^4.8.3",
     "eslint-plugin-yml": "^1.12.2",
