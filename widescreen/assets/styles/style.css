@@ -2,10 +2,10 @@
 
 @font-face {
     font-family: baba-pro-bold;
-    src: url('../assets/fonts/baba-pro-bold/baba-pro-bold.otf') format('opentype'),
-         url('../assets/fonts/baba-pro-bold/baba-pro-bold.ttf') format('truetype'),
-         url('../assets/fonts/baba-pro-bold/baba-pro-bold.woff') format('woff'),
-         url('../assets/fonts/baba-pro-bold/baba-pro-bold.woff2') format('woff2');
+    src: url('../../../assets/fonts/baba-pro-bold/baba-pro-bold.otf') format('opentype'),
+         url('../../../assets/fonts/baba-pro-bold/baba-pro-bold.ttf') format('truetype'),
+         url('../../../assets/fonts/baba-pro-bold/baba-pro-bold.woff') format('woff'),
+         url('../../../assets/fonts/baba-pro-bold/baba-pro-bold.woff2') format('woff2');
 }
 
 main {
