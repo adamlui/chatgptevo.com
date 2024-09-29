@@ -50,7 +50,7 @@ h1 {
     transition: 0.2s ease all ;
     font-size: 1.3rem !important ;
     padding: 12px 33px !important ;
-    border-radius: 0 ;
+    margin: 0 !important ; border-radius: 0
 }
 
 .chrome-btn {
