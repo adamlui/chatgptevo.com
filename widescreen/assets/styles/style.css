@@ -73,6 +73,16 @@ h1 {
     box-shadow: 1px 6px 81px #45F8FF ;
 }
 
+.firefox-btn {
+    background-color: #F88 ; border-color: #F88 ;
+    box-shadow: -3px 6px 41px #F88 ;
+}
+
+.firefox-btn:hover {
+    background-color: #F88 ; border-color: #F88 ;
+    box-shadow: -3px 6px 61px #F88 ;
+}
+
 .gm-btn {
     background-color: white ; border-color: white ;
     box-shadow: 3px 6px 41px white ;
