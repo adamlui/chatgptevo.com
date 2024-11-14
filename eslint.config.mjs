@@ -1,6 +1,7 @@
 import js from '@eslint/js'
 import globals from 'globals'
 import json from '@eslint/json'
+import * as regexp from 'eslint-plugin-regexp'
 import eslintPluginYml from 'eslint-plugin-yml'
 
 export default [
@@ -8,8 +9,9 @@ export default [
     {
         files: ['**/*.js', '**/*.mjs'],
         languageOptions: { ecmaVersion: 'latest', sourceType: 'script', globals: { ...globals.browser }},
+        plugins: { regexp },
         rules: {
-            ...js.configs.recommended.rules,
+            ...js.configs.recommended.rules, ...regexp.configs['flat/recommended'].rules,
             'indent': 'off', 'no-unexpected-multiline': 'off', // allow whitespace anywhere
             'quotes': ['error', 'single', { 'allowTemplateLiterals': true }], // enforce single quotes except backticks to avoid escaping quotes
             'key-spacing': ['error', { 'beforeColon': false, 'afterColon': true }], // enforce spacing in object properties
