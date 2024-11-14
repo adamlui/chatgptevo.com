@@ -7,6 +7,7 @@ export default [
     { ignores: ['**/*.min.js'] },
     {
         files: ['**/*.js', '**/*.mjs'],
+        languageOptions: { ecmaVersion: 'latest', sourceType: 'script', globals: { ...globals.browser }},
         rules: {
             ...js.configs.recommended.rules,
             'indent': 'off', 'no-unexpected-multiline': 'off', // allow whitespace anywhere
@@ -19,8 +20,7 @@ export default [
             'no-inner-declarations': 'off', // allow function declarations anywhere
             'no-useless-escape': 'off', // allow all escape chars cause ESLint sucks at detecting truly useless ones
             'no-unused-vars': ['error', { 'caughtErrors': 'none' }] // allow unused named args in catch blocks
-        },
-        languageOptions: { ecmaVersion: 'latest', sourceType: 'script', globals: { ...globals.browser }}
+        }
     },
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
     { files: ['**/*.json'], ignores: ['**/package-lock.json'], language: 'json/json', ...json.configs.recommended },
