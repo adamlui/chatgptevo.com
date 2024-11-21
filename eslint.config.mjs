@@ -3,7 +3,7 @@ import globals from 'globals'
 import stylisticJS from '@stylistic/eslint-plugin-js'
 import json from '@eslint/json'
 import * as regexp from 'eslint-plugin-regexp'
-import eslintPluginYml from 'eslint-plugin-yml'
+import yml from 'eslint-plugin-yml'
 
 export default [
     { ignores: ['**/*.min.js'] },
@@ -28,5 +28,5 @@ export default [
     },
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
     { files: ['**/*.json'], ignores: ['**/package-lock.json'], language: 'json/json', ...json.configs.recommended },
-    { files: ['**/*.yaml, **/*.yml'], ...eslintPluginYml.configs['flat/standard'][1] }
+    { files: ['**/*.yaml, **/*.yml'], ...yml.configs['flat/standard'][1] }
 ]
