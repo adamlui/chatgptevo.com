@@ -2,7 +2,7 @@ import js from '@eslint/js'
 import globals from 'globals'
 import stylisticJS from '@stylistic/eslint-plugin-js'
 import json from '@eslint/json'
-import * as regexp from 'eslint-plugin-regexp'
+import regexp from 'eslint-plugin-regexp'
 import yml from 'eslint-plugin-yml'
 
 export default [
