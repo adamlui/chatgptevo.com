@@ -4,7 +4,7 @@ on: [push, pull_request]
 jobs:
 
   js-json-md-yaml-lint:
-    name: JavaScript + JSON + Markdown + YAML
+    name: JavaScript + JSON + YAML
     runs-on: ubuntu-latest
     steps:
 
