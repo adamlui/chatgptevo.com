@@ -1,6 +1,7 @@
 {
   "homepage": "https://www.chatgptevo.com",
   "scripts": {
+    "prepare": "husky",
     "lint": "eslint . --cache",
     "lint:all": "eslint .",
     "lint:fix": "eslint . --fix --cache",
