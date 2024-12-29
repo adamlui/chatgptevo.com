@@ -7,7 +7,7 @@ import stylisticJS from '@stylistic/eslint-plugin-js'
 import yml from 'eslint-plugin-yml'
 
 export default [
-    { ignores: ['**/*.min.js'] },
+    { ignores: ['**/*.min.js', '**/package-lock.json'] },
     {
         files: ['**/*.js', '**/*.mjs'],
         languageOptions: { ecmaVersion: 'latest', sourceType: 'script', globals: { ...globals.browser }},
@@ -34,6 +34,6 @@ export default [
         }
     },
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
-    { files: ['**/*.json'], ignores: ['**/package-lock.json'], language: 'json/json', ...json.configs.recommended },
+    { files: ['**/*.json'], language: 'json/json', ...json.configs.recommended },
     { files: ['**/*.yaml, **/*.yml'], ...yml.configs['flat/standard'][1] }
 ]
