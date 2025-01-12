@@ -37,7 +37,7 @@ h1 { color: white ; }
 
 .install-btn {
     --transition-style: 0.2s ease all ;
-    color: black ; font-family: baba-pro-bold, sans-serif ; ont-size: 1.3rem !important ;
+    color: black ; font-family: baba-pro-bold, sans-serif ; font-size: 1.3rem !important ;
     padding: 12px 33px !important ; margin: 0 !important ; border-radius: 0 ;
 
     /* eslint-disable -- avoid false no-invalid-property positive https://github.com/eslint/css/issues/40 */
