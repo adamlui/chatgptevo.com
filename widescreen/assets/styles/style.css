@@ -31,6 +31,7 @@ button:hover, a:hover { cursor: url('../../../assets/images/cursors/futuristic/t
 .py-5 { padding-bottom: 1rem !important } /* Decrease bottom-padding of header */
 h1 { color: white ; }
 
+/* Buttons */
 .install-btn {
     --transition-style: 0.2s ease all ;
     color: black ; font-family: baba-pro-bold, sans-serif ; font-size: 1.3rem !important ;
@@ -42,7 +43,6 @@ h1 { color: white ; }
         -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style)
     /* eslint-enable */
 }
-
 .chrome-btn { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 41px #01FF18 }
 .chrome-btn:hover { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 61px #01FF18 }
 .edge-btn { background-color: #45F8FF ; border-color: #45F8FF ; box-shadow: 1px 6px 101px #45F8FF }
@@ -52,6 +52,7 @@ h1 { color: white ; }
 .gm-btn { background-color: white ; border-color: white ; box-shadow: 3px 6px 41px white }
 .gm-btn:hover { color: lightgray ; background-color: white ; border-color: white ; box-shadow: 3px 6px 61px white }
 .browser-icon { right: 5px ;bottom: 2px ; position: relative }
+
 .featured-logos { padding: 13px }
 .featured-logos a {
     --transition-style: 0.05s ease all ;
