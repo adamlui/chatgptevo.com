@@ -1,5 +1,6 @@
 import js from '@eslint/js'
 import globals from 'globals'
+import css from '@eslint/css'
 import importPlugin from 'eslint-plugin-import'
 import json from '@eslint/json'
 import regexp from 'eslint-plugin-regexp'
@@ -33,6 +34,7 @@ export default [
             'no-unused-vars': ['error', { 'caughtErrors': 'none' }] // allow unused named args in catch blocks
         }
     },
+    { files: ['**/*.css'], language: 'css/css', ...css.configs.recommended },
     { files: ['**/*.json'], language: 'json/json', ...json.configs.recommended },
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
     { files: ['**/*.yaml, **/*.yml'], ...yml.configs['flat/standard'][1] }
