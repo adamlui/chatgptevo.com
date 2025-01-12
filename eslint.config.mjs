@@ -10,7 +10,7 @@ import yml from 'eslint-plugin-yml'
 export default [
     { ignores: ['**/*.min.js', '**/package-lock.json'] },
     {
-        files: ['**/*.js', '**/*.mjs'],
+        files: ['**/*.{js,mjs}'],
         languageOptions: { ecmaVersion: 'latest', sourceType: 'script', globals: { ...globals.browser }},
         plugins: { 'import': importPlugin, 'js-styles': stylisticJS, regexp },
         rules: {
@@ -37,5 +37,5 @@ export default [
     { files: ['**/*.css'], language: 'css/css', ...css.configs.recommended },
     { files: ['**/*.json'], language: 'json/json', ...json.configs.recommended },
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
-    { files: ['**/*.yaml, **/*.yml'], ...yml.configs['flat/standard'][1] }
+    { files: ['**/*.{yaml,yml}'], ...yml.configs['flat/standard'][1] }
 ]
