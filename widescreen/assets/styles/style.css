@@ -53,6 +53,7 @@ h1 { color: white ; }
 .gm-btn:hover { color: lightgray ; background-color: white ; border-color: white ; box-shadow: 3px 6px 61px white }
 .browser-icon { right: 5px ;bottom: 2px ; position: relative }
 
+/* Featured logos */
 .featured-logos { padding: 13px }
 .featured-logos a {
     --transition-style: 0.05s ease all ;
@@ -64,7 +65,6 @@ h1 { color: white ; }
         -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style)
     /* eslint-enable */
 }
-
 .featured-logos a:hover { opacity:.75 }
 
 @media (max-width: 991px) { .hero-logo { max-width: 100% }} /* Full-width hero logo @ < 991px */
