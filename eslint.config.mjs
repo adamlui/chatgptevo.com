@@ -33,7 +33,7 @@ export default [
             'no-unused-vars': ['error', { 'caughtErrors': 'none' }] // allow unused named args in catch blocks
         }
     },
-    { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
     { files: ['**/*.json'], language: 'json/json', ...json.configs.recommended },
+    { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
     { files: ['**/*.yaml, **/*.yml'], ...yml.configs['flat/standard'][1] }
 ]
