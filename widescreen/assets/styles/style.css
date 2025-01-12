@@ -44,16 +44,20 @@ h1 {
     color: white ;
 }
 
+
 .install-btn {
     --transition-style: 0.2s ease all ;
     color: black ;
     font-family: baba-pro-bold, sans-serif ;
-    transition: var(--transition-style) ;
-        -webkit-transition: var(--transition-style) ; -moz-transition: var(--transition-style) ;
-        -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style) ;
     font-size: 1.3rem !important ;
     padding: 12px 33px !important ;
-    margin: 0 !important ; border-radius: 0
+    margin: 0 !important ; border-radius: 0 ;
+
+    /* eslint-disable -- avoid false no-invalid-property positive https://github.com/eslint/css/issues/40 */
+    transition: var(--transition-style) ;
+        -webkit-transition: var(--transition-style) ; -moz-transition: var(--transition-style) ;
+        -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style)
+    /* eslint-enable */
 }
 
 .chrome-btn {
@@ -104,11 +108,16 @@ h1 {
 }
 
 .featured-logos { padding: 13px }
+
 .featured-logos a {
     --transition-style: 0.05s ease all ;
     text-decoration: none ;
+
+    /* eslint-disable -- avoid false no-invalid-property positive https://github.com/eslint/css/issues/40 */
     transition: var(--transition-style) ;
         -webkit-transition: var(--transition-style) ; -moz-transition: var(--transition-style) ;
         -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style)
+    /* eslint-enable */
 }
+
 .featured-logos a:hover { opacity:.75 }
