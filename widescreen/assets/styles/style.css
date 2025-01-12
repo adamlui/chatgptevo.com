@@ -12,7 +12,7 @@ main {
     background-image: url('../images/background.png');
     background-size: cover;
     background-position: bottom center;
-    background-attachment: scroll;
+    background-attachment: scroll
 }
 
 iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.js */
@@ -26,7 +26,7 @@ iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.j
 
 body, iframe { cursor: url('../../../assets/images/cursors/futuristic/pointer.cur'), auto }
 button:hover, a:hover { cursor: url('../../../assets/images/cursors/futuristic/target.gif'), auto }
-.github-corner { position: fixed ; right: 0 ; top: 0 ; z-index: 1 ; height: auto ; width: 7rem ; }
+.github-corner { position: fixed ; right: 0 ; top: 0 ; z-index: 1 ; height: auto ; width: 7rem }
 .hero-logo { margin: 21px 0 ; max-width: 75% ; height: auto }
 
 @media (max-width: 991px) { .hero-logo { max-width: 100% }} /* Full-width hero logo @ < 991px */
@@ -47,15 +47,15 @@ h1 { color: white ; }
     /* eslint-enable */
 }
 
-.chrome-btn { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 41px #01FF18 ; }
-.chrome-btn:hover { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 61px #01FF18 ; }
-.edge-btn { background-color: #45F8FF ; border-color: #45F8FF ; box-shadow: 1px 6px 101px #45F8FF ; }
-.edge-btn:hover { background-color: #45F8FF ; border-color: #45F8FF ; box-shadow: 1px 6px 81px #45F8FF ; }
-.firefox-btn { background-color: #F88 ; border-color: #F88 ; box-shadow: -3px 6px 41px #F88 ; }
-.firefox-btn:hover { background-color: #F88 ; border-color: #F88 ; box-shadow: -3px 6px 61px #F88 ; }
-.gm-btn { background-color: white ; border-color: white ; box-shadow: 3px 6px 41px white ; }
-.gm-btn:hover { color: lightgray ; background-color: white ; border-color: white ; box-shadow: 3px 6px 61px white ; }
-.browser-icon { right: 5px ;bottom: 2px ; position: relative ; }
+.chrome-btn { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 41px #01FF18 }
+.chrome-btn:hover { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 61px #01FF18 }
+.edge-btn { background-color: #45F8FF ; border-color: #45F8FF ; box-shadow: 1px 6px 101px #45F8FF }
+.edge-btn:hover { background-color: #45F8FF ; border-color: #45F8FF ; box-shadow: 1px 6px 81px #45F8FF }
+.firefox-btn { background-color: #F88 ; border-color: #F88 ; box-shadow: -3px 6px 41px #F88 }
+.firefox-btn:hover { background-color: #F88 ; border-color: #F88 ; box-shadow: -3px 6px 61px #F88 }
+.gm-btn { background-color: white ; border-color: white ; box-shadow: 3px 6px 41px white }
+.gm-btn:hover { color: lightgray ; background-color: white ; border-color: white ; box-shadow: 3px 6px 61px white }
+.browser-icon { right: 5px ;bottom: 2px ; position: relative }
 .featured-logos { padding: 13px }
 .featured-logos a {
     --transition-style: 0.05s ease all ;
