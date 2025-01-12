@@ -26,32 +26,19 @@ iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.j
 
 body, iframe { cursor: url('../../../assets/images/cursors/futuristic/pointer.cur'), auto }
 button:hover, a:hover { cursor: url('../../../assets/images/cursors/futuristic/target.gif'), auto }
-
-.github-corner {
-    position: fixed ;
-    right: 0 ; top: 0 ; z-index: 1 ;
-    height: auto ; width: 7rem ;
-}
-
+.github-corner { position: fixed ; right: 0 ; top: 0 ; z-index: 1 ; height: auto ; width: 7rem ; }
 .hero-logo { margin: 21px 0 ; max-width: 75% ; height: auto }
 
 @media (max-width: 991px) { .hero-logo { max-width: 100% }} /* Full-width hero logo @ < 991px */
 @media (max-width: 573px) { .install-btn { margin: auto }} /* Center buttons @ < 558px */
 
 .py-5 { padding-bottom: 1rem !important } /* Decrease bottom-padding of header */
-
-h1 {
-    color: white ;
-}
-
+h1 { color: white ; }
 
 .install-btn {
     --transition-style: 0.2s ease all ;
-    color: black ;
-    font-family: baba-pro-bold, sans-serif ;
-    font-size: 1.3rem !important ;
-    padding: 12px 33px !important ;
-    margin: 0 !important ; border-radius: 0 ;
+    color: black ; font-family: baba-pro-bold, sans-serif ; ont-size: 1.3rem !important ;
+    padding: 12px 33px !important ; margin: 0 !important ; border-radius: 0 ;
 
     /* eslint-disable -- avoid false no-invalid-property positive https://github.com/eslint/css/issues/40 */
     transition: var(--transition-style) ;
@@ -60,55 +47,16 @@ h1 {
     /* eslint-enable */
 }
 
-.chrome-btn {
-    background-color: #01FF18 ; border-color: #01FF18 ;
-    box-shadow: -3px 6px 41px #01FF18 ;
-}
-
-.chrome-btn:hover {
-    background-color: #01FF18 ; border-color: #01FF18 ;
-    box-shadow: -3px 6px 61px #01FF18 ;
-}
-
-.edge-btn {
-    background-color: #45F8FF ; border-color: #45F8FF ;
-    box-shadow: 1px 6px 101px #45F8FF ;
-}
-
-.edge-btn:hover {
-    background-color: #45F8FF ; border-color: #45F8FF ;
-    box-shadow: 1px 6px 81px #45F8FF ;
-}
-
-.firefox-btn {
-    background-color: #F88 ; border-color: #F88 ;
-    box-shadow: -3px 6px 41px #F88 ;
-}
-
-.firefox-btn:hover {
-    background-color: #F88 ; border-color: #F88 ;
-    box-shadow: -3px 6px 61px #F88 ;
-}
-
-.gm-btn {
-    background-color: white ; border-color: white ;
-    box-shadow: 3px 6px 41px white ;
-}
-
-.gm-btn:hover {
-    color: lightgray ;
-    background-color: white ; border-color: white ;
-    box-shadow: 3px 6px 61px white ;
-}
-
-.browser-icon {
-    right: 5px ;
-    bottom: 2px ;
-    position: relative ;
-}
-
+.chrome-btn { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 41px #01FF18 ; }
+.chrome-btn:hover { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 61px #01FF18 ; }
+.edge-btn { background-color: #45F8FF ; border-color: #45F8FF ; box-shadow: 1px 6px 101px #45F8FF ; }
+.edge-btn:hover { background-color: #45F8FF ; border-color: #45F8FF ; box-shadow: 1px 6px 81px #45F8FF ; }
+.firefox-btn { background-color: #F88 ; border-color: #F88 ; box-shadow: -3px 6px 41px #F88 ; }
+.firefox-btn:hover { background-color: #F88 ; border-color: #F88 ; box-shadow: -3px 6px 61px #F88 ; }
+.gm-btn { background-color: white ; border-color: white ; box-shadow: 3px 6px 41px white ; }
+.gm-btn:hover { color: lightgray ; background-color: white ; border-color: white ; box-shadow: 3px 6px 61px white ; }
+.browser-icon { right: 5px ;bottom: 2px ; position: relative ; }
 .featured-logos { padding: 13px }
-
 .featured-logos a {
     --transition-style: 0.05s ease all ;
     text-decoration: none ;
