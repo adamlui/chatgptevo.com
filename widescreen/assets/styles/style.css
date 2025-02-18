@@ -27,7 +27,8 @@ iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.j
 
 @supports (cursor: url('../../../assets/images/cursors/futuristic/pointer.cur'), auto) {
     body, iframe { cursor: url('../../../assets/images/cursors/futuristic/pointer.cur'), auto }}
-button:hover, a:hover { cursor: url('../../../assets/images/cursors/futuristic/target.gif'), auto }
+@supports (cursor: url('../../../assets/images/cursors/futuristic/target.gif'), auto ) {
+    button:hover, a:hover { cursor: url('../../../assets/images/cursors/futuristic/target.gif'), auto }}
 .github-corner { position: fixed ; right: 0 ; top: 0 ; z-index: 1 ; height: auto ; width: 7rem }
 .hero-logo { margin: 21px 0 ; max-width: 75% ; height: auto }
 .py-5 { padding-bottom: 1rem !important } /* Decrease bottom-padding of header */
