@@ -18,13 +18,15 @@ main {
 iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.js */
 
 /* Scrollbar */
-* { scrollbar-color: rgb(210,210,210) #1a1a1a ; scrollbar-width: thin } /* Firefox */
+@supports (scrollbar-color: rgb(210,210,210)) { * { scrollbar-color: rgb(210,210,210) #1a1a1a }} /* Firefox */
+@supports (scrollbar-width: thin) { * { scrollbar-width: thin }}
 ::-webkit-scrollbar { width: 10px ; height: 10px } /* Chromium/Safari */
 ::-webkit-scrollbar-thumb { background: white ; border-radius: 4px ; border: 1px black solid }
 ::-webkit-scrollbar-track { background: #1a1a1a }
 ::-webkit-scrollbar-thumb:hover { background: rgb(210,210,210) }
 
-body, iframe { cursor: url('../../../assets/images/cursors/futuristic/pointer.cur'), auto }
+@supports (cursor: url('../../../assets/images/cursors/futuristic/pointer.cur'), auto) {
+    body, iframe { cursor: url('../../../assets/images/cursors/futuristic/pointer.cur'), auto }}
 button:hover, a:hover { cursor: url('../../../assets/images/cursors/futuristic/target.gif'), auto }
 .github-corner { position: fixed ; right: 0 ; top: 0 ; z-index: 1 ; height: auto ; width: 7rem }
 .hero-logo { margin: 21px 0 ; max-width: 75% ; height: auto }
@@ -69,3 +71,10 @@ h1 { color: white ; }
 
 @media (max-width: 991px) { .hero-logo { max-width: 100% }} /* Full-width hero logo @ < 991px */
 @media (max-width: 573px) { .install-btn { margin: auto }} /* Center buttons @ < 558px */
+
+/* Non-baseline features */
+@supports (overflow: clip) { body { overflow: clip }}
+@supports (user-select: none) { body, button, input, select, textarea { user-select: none }}
+@supports (cursor: pointer) {
+    .highlight:focus, .highlight:hover, .toggle-switch .track, .cjs-span { cursor: pointer }}
+
