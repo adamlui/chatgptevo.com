@@ -58,12 +58,9 @@ h1 { color: white ; }
 .featured-logos a {
     --transition-style: 0.05s ease all ;
     text-decoration: none ;
-
-    /* eslint-disable -- avoid false no-invalid-property positive https://github.com/eslint/css/issues/40 */
     transition: var(--transition-style) ;
         -webkit-transition: var(--transition-style) ; -moz-transition: var(--transition-style) ;
         -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style)
-    /* eslint-enable */
 }
 .featured-logos a:hover { opacity:.75 }
 
