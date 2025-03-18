@@ -39,12 +39,9 @@ h1 { color: white ; }
     --transition-style: 0.2s ease all ;
     color: black ; font-family: baba-pro-bold, sans-serif ; font-size: 1.3rem !important ;
     padding: 12px 33px !important ; margin: 0 !important ; border-radius: 0 ;
-
-    /* eslint-disable -- avoid false no-invalid-property positive https://github.com/eslint/css/issues/40 */
     transition: var(--transition-style) ;
         -webkit-transition: var(--transition-style) ; -moz-transition: var(--transition-style) ;
         -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style)
-    /* eslint-enable */
 }
 .chrome-btn { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 41px #01FF18 }
 .chrome-btn:hover { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 61px #01FF18 }
