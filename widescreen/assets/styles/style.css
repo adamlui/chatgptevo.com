@@ -71,4 +71,5 @@ h1 { color: white ; }
 @supports (overflow: clip) { body { overflow: clip }}
 @supports (user-select: none) { body, button, input, select, textarea { user-select: none }}
 @supports (cursor: pointer) {
+    /* eslint-disable -- avoid false require-baseline positive https://github.com/eslint/css/issues/91 */
     .highlight:focus, .highlight:hover, .toggle-switch .track, .cjs-span { cursor: pointer }}
