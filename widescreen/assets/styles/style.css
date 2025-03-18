@@ -75,4 +75,3 @@ h1 { color: white ; }
 @supports (user-select: none) { body, button, input, select, textarea { user-select: none }}
 @supports (cursor: pointer) {
     .highlight:focus, .highlight:hover, .toggle-switch .track, .cjs-span { cursor: pointer }}
-
