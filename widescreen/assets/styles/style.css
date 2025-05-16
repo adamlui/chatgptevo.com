@@ -31,17 +31,16 @@ iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.j
     button:hover, a:hover { cursor: url('../../../assets/images/cursors/futuristic/target.gif'), auto }}
 .github-corner { position: fixed ; right: 0 ; top: 0 ; z-index: 1 ; height: auto ; width: 7rem }
 .hero-logo { margin: 21px 0 ; max-width: 75% ; height: auto }
-.py-5 { padding-bottom: 1rem !important } /* Decrease bottom-padding of header */
+.py-5 { padding-bottom: 1rem } /* Decrease bottom-padding of header */
 h1 { color: white ; }
 
 /* Buttons */
 .install-btn {
-    --transition-style: 0.2s ease all ;
-    color: black ; font-family: baba-pro-bold, sans-serif ; font-size: 1.3rem !important ;
-    padding: 12px 33px !important ; margin: 0 !important ; border-radius: 0 ;
-    transition: var(--transition-style) ;
-        -webkit-transition: var(--transition-style) ; -moz-transition: var(--transition-style) ;
-        -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style)
+    color: black ; font-family: baba-pro-bold, sans-serif ; font-size: 1.3rem ;
+    padding: 12px 33px ; margin: 0 ; border-radius: 0 ;
+    --transition: 0.2s ease all ; transition: var(--transition) ;
+        -webkit-transition: var(--transition) ; -moz-transition: var(--transition) ;
+        -o-transition: var(--transition) ; -ms-transition: var(--transition)
 }
 .chrome-btn { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 41px #01FF18 }
 .chrome-btn:hover { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 61px #01FF18 }
