@@ -6,7 +6,7 @@ import htmlParser from '@html-eslint/parser'
 import importPlugin from 'eslint-plugin-import'
 import json from '@eslint/json'
 import regexp from 'eslint-plugin-regexp'
-import stylisticJS from '@stylistic/eslint-plugin-js'
+import stylisticJS from '@stylistic/eslint-plugin'
 import yml from 'eslint-plugin-yml'
 
 export default [
