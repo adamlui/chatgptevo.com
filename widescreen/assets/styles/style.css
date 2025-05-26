@@ -38,9 +38,9 @@ h1 { color: white ; }
 .install-btn {
     color: black ; font-family: baba-pro-bold, sans-serif ; font-size: 1.3rem ;
     padding: 12px 33px ; margin: 0 ; border-radius: 0 ;
-    --transition: 0.2s ease all ; transition: var(--transition) ;
-        -webkit-transition: var(--transition) ; -moz-transition: var(--transition) ;
-        -o-transition: var(--transition) ; -ms-transition: var(--transition)
+  --transition: 0.2s ease all ; transition: var(--transition) ;
+       -webkit-transition: var(--transition) ; -moz-transition: var(--transition) ;
+       -o-transition: var(--transition) ; -ms-transition: var(--transition)
 }
 .chrome-btn { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 41px #01FF18 }
 .chrome-btn:hover { background-color: #01FF18 ; border-color: #01FF18 ; box-shadow: -3px 6px 61px #01FF18 }
@@ -55,11 +55,11 @@ h1 { color: white ; }
 /* Featured logos */
 .featured-logos { padding: 13px }
 .featured-logos a {
-    --transition-style: 0.05s ease all ;
+  --transition-style: 0.05s ease all ;
     text-decoration: none ;
     transition: var(--transition-style) ;
-        -webkit-transition: var(--transition-style) ; -moz-transition: var(--transition-style) ;
-        -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style)
+       -webkit-transition: var(--transition-style) ; -moz-transition: var(--transition-style) ;
+       -o-transition: var(--transition-style) ; -ms-transition: var(--transition-style)
 }
 .featured-logos a:hover { opacity:.75 }
 
