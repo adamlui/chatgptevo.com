@@ -36,7 +36,10 @@ export default [
             'no-unused-vars': ['error', { 'caughtErrors': 'none' }] // allow unused named args in catch blocks
         }
     },
-    { files: ['**/*.css'], language: 'css/css', ...css.configs.recommended },
+    {
+        files: ['**/*.css'], language: 'css/css', plugins: { css },
+        rules: { ...css.configs.recommended.rules, 'css/no-important': 'off' }
+    },
     {
         files: ['**/*.html'], languageOptions: { parser: htmlParser }, plugins: { '@html-eslint': html },
         rules: {
