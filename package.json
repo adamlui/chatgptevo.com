@@ -6,7 +6,7 @@
     "lint:all": "eslint .",
     "lint:fix": "eslint . --fix --cache",
     "lint:fix-all": "eslint . --fix",
-    "build:js": "minify-js ."
+    "build:js": "minify-js . --relative-output"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^2.0.0",
