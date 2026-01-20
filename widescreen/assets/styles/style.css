@@ -15,7 +15,7 @@ main {
     background-attachment: scroll
 }
 
-iframe:hover { pointer-events: none } /* to support assets/js/src/smoothscroll.js */
+iframe:hover { pointer-events: none } /* to support assets/js/src/smooth-scroll.js */
 
 /* Scrollbar */
 @supports (scrollbar-color: rgb(210,210,210)) { * { scrollbar-color: rgb(210,210,210) #1a1a1a }} /* Firefox */
