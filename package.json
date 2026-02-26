@@ -9,7 +9,7 @@
     "build:js": "minify-js . --relative-output"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.3.1",
+    "@adamlui/minify.js": "^2.4.1",
     "@eslint/css": "^0.14.1",
     "@eslint/json": "^1.0.1",
     "@html-eslint/eslint-plugin": "^0.57.0",
