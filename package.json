@@ -9,12 +9,12 @@
     "build:js": "minify-js . --relative-output"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.4.1",
+    "@adamlui/minify.js": "^2.5.0",
     "@eslint/css": "^0.14.1",
     "@eslint/json": "^1.0.1",
-    "@html-eslint/eslint-plugin": "^0.58.0",
+    "@html-eslint/eslint-plugin": "^0.58.1",
     "@html-eslint/parser": "^0.58.0",
-    "@stylistic/eslint-plugin": "^5.9.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "eslint": "^9.39.3",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-regexp": "^3.0.0",
